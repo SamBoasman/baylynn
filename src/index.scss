@@ -92,7 +92,7 @@ button {
         color: $primarybtncolor;
 
         &:hover {
-            background-color: $primarybtnhoverbg;
+            opacity: 80%;
             color: $primarybtnhovercolor;
         }
     }
@@ -105,6 +105,15 @@ button {
         &:hover {
             background-color: $secondarybtnhovercolor;
             color: $secondarybtncolor;
+        }
+    }
+
+    &.alternate {
+        background-color: $primarybtncolor;
+        color: $primarybtnbg;
+
+        &:hover {
+            background-color: rgba($primarybtncolor, 0.8);
         }
     }
 }

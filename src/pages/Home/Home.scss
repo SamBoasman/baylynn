@@ -1,5 +1,9 @@
 @import "/src/style-variables.scss";
 
+.spacer {
+    height: 50px;
+}
+
 .banner {
     position: relative;
     width: 100%;
@@ -22,14 +26,16 @@
     height: 100%;
     background: radial-gradient(rgba(47, 47, 96, 0.7) 48%, rgba(51, 119, 236, 0.7) 87%);
     z-index: 1;
-    pointer-events: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: $nv-text-dark-bg;
+    padding: 30px;
 }
 
 .banner-body {
     max-width: 1100px;
+    font-size: 18px;
 }
