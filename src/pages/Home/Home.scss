@@ -1,0 +1,24 @@
+.background-wrapper {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 37% 20%;
+}
+
+.background-gradient {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(47, 47, 96, 0.7) 48%, rgba(51, 119, 236, 0.7) 87%);
+    z-index: 1;
+    pointer-events: none;
+}
