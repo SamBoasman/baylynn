@@ -1,9 +1,129 @@
+@import "./style-variables";
+
+:root {
+    font-family: $nv-fallback-ff;
+}
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-        "Droid Sans", "Helvetica Neue", sans-serif;
+    padding: 0;
+    background-color: $nv-site-bg;
+    font-family: $bodyfontfamily;
+    font-size: $bodyfontsize;
+    line-height: $bodylineheight;
+    letter-spacing: $bodyletterspacing;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: $nv-fallback-ff;
+}
+
+h1 {
+    font-size: $h1fontsize;
+    font-weight: $h1fontweight;
+    line-height: $h1lineheight;
+    letter-spacing: $h1letterspacing;
+    text-transform: $h1texttransform;
+}
+
+h2 {
+    font-size: $h2fontsize;
+    font-weight: $h2fontweight;
+    line-height: $h2lineheight;
+    letter-spacing: $h2letterspacing;
+    text-transform: $h2texttransform;
+}
+
+h3 {
+    font-size: $h3fontsize;
+    font-weight: $h3fontweight;
+    line-height: $h3lineheight;
+    letter-spacing: $h3letterspacing;
+    text-transform: $h3texttransform;
+}
+
+h4 {
+    font-size: $h4fontsize;
+    font-weight: $h4fontweight;
+    line-height: $h4lineheight;
+    letter-spacing: $h4letterspacing;
+    text-transform: $h4texttransform;
+}
+
+h5 {
+    font-size: $h5fontsize;
+    font-weight: $h5fontweight;
+    line-height: $h5lineheight;
+    letter-spacing: $h5letterspacing;
+    text-transform: $h5texttransform;
+}
+
+h6 {
+    font-size: $h6fontsize;
+    font-weight: $h6fontweight;
+    line-height: $h6lineheight;
+    letter-spacing: $h6letterspacing;
+    text-transform: $h6texttransform;
+}
+
+a {
+    color: $nv-primary-accent;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: $nv-secondary-accent;
+    }
+}
+
+button {
+    font-family: $nv-fallback-ff;
+    font-size: 1rem;
+    border-radius: $primarybtnborderradius;
+    padding: $btnpadding;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &.primary {
+        background-color: $primarybtnbg;
+        color: $primarybtncolor;
+
+        &:hover {
+            background-color: $primarybtnhoverbg;
+            color: $primarybtnhovercolor;
+        }
+    }
+
+    &.secondary {
+        background-color: transparent;
+        color: $secondarybtncolor;
+        border: $secondarybtnborderwidth solid $secondarybtncolor;
+
+        &:hover {
+            background-color: $secondarybtnhovercolor;
+            color: $secondarybtncolor;
+        }
+    }
+}
+
+input,
+textarea,
+select {
+    font-family: $nv-fallback-ff;
+    font-size: 1rem;
+    border: $formfieldborderwidth solid $formfieldbordercolor;
+    border-radius: $formfieldborderradius;
+    padding: $formfieldpadding;
+    background-color: $formfieldbgcolor;
+    color: $formfieldcolor;
+
+    &:focus {
+        outline: none;
+        border-color: $nv-primary-accent;
+    }
 }
 
 code {
