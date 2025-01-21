@@ -1,6 +1,6 @@
 import logo from '../../assets/logo.webp';
 import './Navbar.scss';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -11,7 +11,9 @@ function Navbar() {
                 <span className='bar'></span>
                 <span className='bar'></span>
             </div> */}
-            <img className='nav-logo' src={logo}/>
+            <Link className='nav-logo' to='/'>
+              <img className='nav-logo-img' src={logo}/>
+            </Link>
             <div className='nav-headers'>
                 <NavLink to='/' end>Home</NavLink>
                 <NavLink to='/AboutUs' end>About Us</NavLink>
