@@ -1,0 +1,48 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 5px 0 rgba(175, 175, 175, 0.1);
+}
+
+.navbar {
+    padding: 15px;
+    height: 12vh;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 90%;
+}
+
+.nav-headers {
+    display: flex;
+    gap: 30px;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a.active {
+        color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+// .hamburger {
+//     display: none;
+// }
+
+// .bar {
+//     display: block;
+//     width: 25px;
+//     height: 3px;
+//     margin: 5px auto;
+//     -webkit-transition: all 0.3s ease-in-out;
+//     transition: all 0.3s ease-in-out;
+//     background-color: #101010;
+// }
