@@ -6,11 +6,11 @@ function Navbar() {
   return (
     <header>
         <nav className='navbar'>
-            {/* <div className='hamburger'>
+            <div className='hamburger'>
                 <span className='bar'></span>
                 <span className='bar'></span>
                 <span className='bar'></span>
-            </div> */}
+            </div>
             <Link className='nav-logo' to='/'>
               <img className='nav-logo-img' src={logo}/>
             </Link>

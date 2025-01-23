@@ -25,29 +25,39 @@ header {
 }
 
 .nav-headers {
-    display: flex;
-    gap: 30px;
+    display: none;
+}
 
-    a {
-        color: black;
-        text-decoration: none;
-    }
+.hamburger {
+    margin: 15px;
 
-    a.active {
-        color: rgba(0, 0, 0, 0.7);
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #101010;
     }
 }
 
-// .hamburger {
-//     display: none;
-// }
+@media screen and (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
 
-// .bar {
-//     display: block;
-//     width: 25px;
-//     height: 3px;
-//     margin: 5px auto;
-//     -webkit-transition: all 0.3s ease-in-out;
-//     transition: all 0.3s ease-in-out;
-//     background-color: #101010;
-// }
+    .nav-headers {
+        display: flex;
+        gap: 30px;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a.active {
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
