@@ -8,6 +8,7 @@ $text-color: #fff;
 $overlay-bg: rgba(0, 0, 0, 0.5);
 $transition-duration: 0.3s;
 $menu-z-index: 1000;
+$nav-toggle-size: 2em;
 
 .nav-links {
     display: flex;
@@ -91,13 +92,59 @@ header {
     border-radius: 20%;
     background-color: transparent;
     z-index: $menu-z-index + 1;
+}
 
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: $nv-primary-accent;
+@mixin button-lines {
+    background: $nv-primary-accent;
+    border-radius: $nav-toggle-size/10;
+    display: inline-block;
+    height: $nav-toggle-size/10;
+    width: $nav-toggle-size;
+}
+
+.lines {
+    @include button-lines;
+    position: relative;
+    transition: background 0.3s ease;
+
+    &:after,
+    &:before {
+        @include button-lines;
+        content: "";
+        left: 0;
+        position: absolute;
+    }
+
+    &:after {
+        top: $nav-toggle-size/4;
+    }
+
+    &:before {
+        top: -$nav-toggle-size/4;
+    }
+
+    &:after,
+    &:before {
+        transform-origin: 50% 50% 0;
+        transition: top 0.3s 0.4s ease, transform 0.3s ease;
+    }
+
+    &.open {
+        background-color: transparent;
+
+        &:after,
+        &:before {
+            top: 0;
+            transition: top 0.3s ease, transform 0.3s 0.3s ease;
+        }
+
+        &:after {
+            transform: rotate3d(0, 0, 1, 45deg);
+        }
+
+        &:before {
+            transform: rotate3d(0, 0, 1, -45deg);
+        }
     }
 }
 

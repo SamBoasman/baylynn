@@ -37,9 +37,7 @@ function Navbar() {
         </div>
         <nav className='navbar'>
           <button className='hamburger' onClick={toggleMenu}>
-              <span className='bar'></span>
-              <span className='bar'></span>
-              <span className='bar'></span>
+            <span className={`lines ${menuOpen ? 'open' : ''}`}></span>
           </button>
           <Link className='nav-logo' to='/'>
             <img className='logo-img' src={logo}/>
