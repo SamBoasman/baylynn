@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
             <Navbar />
-            <div className='spacer' />
+            <div className='spacer pc' />
             <div className='banner'>
                 <img className='background-image' src={backgroundImage} alt='Background' />
                 <div className='background-gradient'>
