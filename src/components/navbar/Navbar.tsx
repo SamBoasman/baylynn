@@ -18,6 +18,9 @@ function Navbar() {
                 <NavLink to='/' end>Home</NavLink>
                 <NavLink to='/AboutUs' end>About Us</NavLink>
                 <NavLink to='/Events' end>Events</NavLink>
+                <NavLink to='/SupportUs' end>Support Us</NavLink>
+                <NavLink to='/JoinUs' end>Join Us</NavLink>
+                <NavLink to='/Gallery' end>Gallery</NavLink>
             </div>
         </nav>
     </header>
