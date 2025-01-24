@@ -34,8 +34,8 @@ const Contact = () => {
             <form onSubmit={onSubmit} className={styles['contact-form']}>
                 <input type="text" name="name" placeholder="Name" required/>
                 <input type="email" name="email" placeholder="Email" required/>
-                <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit">Submit Form</button>
+                <textarea name="message" className={styles['form-message']} placeholder="Message" required></textarea>
+                <button className={styles['form-button']} type="submit">Submit Form</button>
             </form>
             <span>{result}</span>
         </div>
