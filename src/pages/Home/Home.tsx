@@ -2,6 +2,7 @@ import backgroundImage from '../../assets/rehearsal-background.png';
 import './Home.scss';
 import Navbar from '../../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/footer/Footer';
 
 const Home = () => {
     return (
@@ -20,6 +21,8 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
+            <div className='spacer' />
+            <Footer />
         </div>
     );
 };

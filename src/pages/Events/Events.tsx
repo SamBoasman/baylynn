@@ -1,4 +1,4 @@
-import React from 'react';
+import Footer from '../../components/footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
 
 const Events = () => {
@@ -6,6 +6,7 @@ const Events = () => {
         <div>
             <Navbar />
             <h1>Sign Up</h1>
+            <Footer />
         </div>
     )
 }
