@@ -3,9 +3,11 @@ import Navbar from '../../components/navbar/Navbar';
 
 const Events = () => {
     return (
-        <div>
+        <div className='page'>
             <Navbar />
-            <h1>Events</h1>
+            <div className='page-content'>
+                <h1>Events</h1>
+            </div>
             <Footer />
         </div>
     )
