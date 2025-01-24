@@ -1,0 +1,52 @@
+@import "../../style-variables.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: $nv-dark-accent;
+    color: $nv-text-dark-bg;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    button {
+        display: flex;
+        padding: 0;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+}
+
+svg {
+    margin: 0;
+    padding: 2px;
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+    border-radius: 50%;
+
+    &.facebook {
+        background-color: #0866ff;
+    }
+
+    &.instagram {
+        background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    }
+
+    &:hover {
+        scale: 1.2;
+    }
+}

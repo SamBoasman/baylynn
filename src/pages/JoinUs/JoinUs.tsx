@@ -1,4 +1,4 @@
-import React from 'react';
+import Footer from '../../components/footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
 
 const JoinUs = () => {
@@ -6,6 +6,7 @@ const JoinUs = () => {
         <div>
             <Navbar />
             <h1>Join Us</h1>
+            <Footer />
         </div>
     )
 }
