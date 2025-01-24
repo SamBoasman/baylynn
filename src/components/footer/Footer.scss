@@ -18,11 +18,15 @@ p {
     justify-content: center;
     gap: 1rem;
 
-    button {
+    a {
         display: flex;
         padding: 0;
         border-radius: 50%;
         background-color: transparent;
+
+        :hover {
+            cursor: pointer;
+        }
     }
 }
 

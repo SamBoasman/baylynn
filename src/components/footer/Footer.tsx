@@ -13,12 +13,12 @@ const Footer = () => {
             <p>For marketing and promotional requests: blybpromotional@gmail.com</p>
             <div className='spacer' />
             <div className="social-links">
-                <button className='link facebook'>
+                <a className='link facebook' href='https://www.facebook.com/BayLynnYouthBand' target="_blank">
                     <svg className="facebook" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d={facebookSvg}></path></svg>
-                </button>
-                <button className='link instagram'>
+                </a>
+                <a className='link instagram' href='https://instagram.com/baylynnyouthband' target="_blank">
                     <svg className="instagram" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d={instagramSvg}></path></svg>
-                </button>
+                </a>
             </div>
         </div>
     );
