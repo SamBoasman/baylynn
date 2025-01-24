@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import logo from '../../assets/logo.webp';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -30,12 +30,12 @@ function Navbar() {
   }
 
   return (
-    <header>
+    <div className='navbar'>
         <div className={`overlay ${menuOpen ? 'open' : ''}`} onClick={closeMenu}></div>
         <div className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           {NavLinks(`menu-links`)}
         </div>
-        <nav className='navbar'>
+        <nav>
           <button className='hamburger' onClick={toggleMenu}>
             <span className={`lines ${menuOpen ? 'open' : ''}`}></span>
           </button>
@@ -44,7 +44,7 @@ function Navbar() {
           </Link>
           {NavLinks('nav-headers')}
         </nav>
-    </header>
+    </div>
   );
 }
 

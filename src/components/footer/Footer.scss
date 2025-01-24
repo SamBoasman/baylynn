@@ -3,6 +3,7 @@
 .footer {
     display: flex;
     flex-direction: column;
+    margin-top: $spacing-gap;
     padding: 2rem;
     background-color: $nv-dark-accent;
     color: $nv-text-dark-bg;

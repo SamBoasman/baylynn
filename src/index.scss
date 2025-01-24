@@ -21,6 +21,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 h1 {
+    color: $nv-primary-accent;
     font-size: $h1fontsize;
     font-weight: $h1fontweight;
     line-height: $h1lineheight;
@@ -155,5 +156,6 @@ code {
 }
 
 .page-content {
+    padding: 0 2rem;
     flex-grow: 1;
 }
