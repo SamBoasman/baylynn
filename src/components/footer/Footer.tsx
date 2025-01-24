@@ -8,10 +8,10 @@ const Footer = () => {
     return (
         <div className="footer">
             <p>Rehearsals are on Wednesdays 7:00pm – 8:30pm at Blockhouse Bay Primary School Performing Arts Centre during school terms</p>
-            <div className="spacer" />
+            <div style={{height: '1rem'}} />
             <p>For general inquiries: baylynn.youthband@gmail.com</p>
             <p>For marketing and promotional requests: blybpromotional@gmail.com</p>
-            <div className='spacer' />
+            <div style={{height: '2rem'}} />
             <div className="social-links">
                 <a className='link facebook' href='https://www.facebook.com/BayLynnYouthBand' target="_blank" role='link' aria-label='Facebook'>
                     <svg className="facebook" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d={facebookSvg}></path></svg>
