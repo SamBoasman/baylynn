@@ -5,7 +5,7 @@ const Events = () => {
     return (
         <div>
             <Navbar />
-            <h1>Sign Up</h1>
+            <h1>Events</h1>
             <Footer />
         </div>
     )
