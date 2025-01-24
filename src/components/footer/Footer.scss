@@ -16,7 +16,7 @@ p {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 
     a {
         display: flex;
@@ -32,17 +32,19 @@ p {
 
 svg {
     margin: 0;
-    padding: 2px;
-    height: 2rem;
-    width: 2rem;
-    fill: white;
+    padding: 0;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
 
     &.facebook {
+        fill: white;
         background-color: #0866ff;
     }
 
     &.instagram {
+        padding: 2px;
+        fill: white;
         background: #f09433;
         background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -51,6 +53,12 @@ svg {
     }
 
     &:hover {
-        scale: 1.2;
+        scale: 1.1;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .social-links {
+        gap: 1rem;
     }
 }
