@@ -1,0 +1,26 @@
+@import "../../style-variables.scss";
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    gap: 1em;
+}
+
+.form-message {
+    height: 10rem;
+    width: 100% !important;
+}
+
+.form-button {
+    background-color: $nv-secondary-accent;
+    color: $nv-text-dark-bg;
+}

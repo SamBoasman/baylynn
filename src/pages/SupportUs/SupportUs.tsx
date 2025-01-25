@@ -3,9 +3,11 @@ import Navbar from '../../components/navbar/Navbar';
 
 const SupportUs = () => {
     return (
-        <div>
+        <div className='page'>
             <Navbar />
-            <h1>Support Us</h1>
+            <div className='page-content'>
+                <h1>Support Us</h1>
+            </div>            
             <Footer />
         </div>
     )

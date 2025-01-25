@@ -3,10 +3,14 @@
 .footer {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-top: $spacing-gap;
     padding: 2rem;
     background-color: $nv-dark-accent;
     color: $nv-text-dark-bg;
     text-align: center;
+    min-height: 30vh;
+    max-height: 40vh;
 }
 
 p {

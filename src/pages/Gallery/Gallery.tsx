@@ -3,9 +3,11 @@ import Footer from '../../components/footer/Footer';
 
 const Gallery = () => {
     return (
-        <div>
+        <div className='page'>
             <Navbar />
-            <h1>Gallery</h1>
+            <div className='page-content'>
+                <h1>Gallery</h1>
+            </div>
             <Footer />
         </div>
     )

@@ -21,6 +21,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 h1 {
+    color: $nv-primary-accent;
     font-size: $h1fontsize;
     font-weight: $h1fontweight;
     line-height: $h1lineheight;
@@ -145,4 +146,15 @@ code {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-content {
+    padding: 0 2rem;
+    flex-grow: 1;
 }
